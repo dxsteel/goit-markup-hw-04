@@ -57,9 +57,6 @@ body {
   padding-bottom: 94px;
   background-color: #ffffff;
 }
-.benefits {
-  padding-bottom: 0px;
-}
 
 /* навигация */
 .page-header {
@@ -119,6 +116,16 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.icon-contact {
+  margin-right: 10px;
+  padding-top: 4px;
+}
+
+.icon-contact:hover,
+.icon-contact:focus {
+  fill: var(--accent-color);
+}
+
 .address {
   font-style: normal;
   color: #ffffff;
@@ -186,33 +193,22 @@ body {
   display: flex;
 }
 .list-feature {
-  width: 270px;
+  width: calc((100% - 3 * 30px) / 4);
   margin-right: 30px;
 }
-.list-feature::before {
-  display: block;
-  content: "";
+.list-feature:nth-child(4n) {
+  margin-right: 0;
+}
+.icon-advantage {
+  padding: 25px 100px 25px 100px;
+  width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-size: 70px;
-  background-position: center;
   margin-bottom: 30px;
-}
-.list-feature.icon-antenna::before {
-  background-image: url("../images/antenna.png");
+  background-color: #f5f4fa;
 }
 
-.list-feature.icon-clock::before {
-  background-image: url("../images/clock.png");
-}
-
-.list-feature.icon-diagramm::before {
-  background-image: url("../images/diagram.png");
-}
-
-.list-feature.icon-astronaut::before {
-  background-image: url("../images/astronaut.png");
+.benefits {
+  padding-bottom: 0px;
 }
 
 .feature-text {
@@ -235,7 +231,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
-  margin-right: 30px;
+  margin-top: 0px;
 }
 .item-business {
   display: flex;
@@ -244,6 +240,7 @@ body {
 }
 
 /* команда */
+
 .team {
   background-color: #f5f4fa;
 }
@@ -283,6 +280,26 @@ body {
   padding-bottom: 30px;
 }
 
+.social-link {
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-place {
+  display: flex;
+}
+.icon-link {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: var(--p-text-color);
+}
+.icon-link:hover {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
 /* страница портфолио */
 
 /* работы команды */
