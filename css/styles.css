@@ -105,8 +105,6 @@ body {
 
 .page-footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .contacts-footer {
   font-style: normal;
@@ -165,6 +163,10 @@ body {
   text-decoration: none;
 }
 
+.logo-footer-position {
+  margin-bottom: 20px;
+}
+
 .adress-footer-position {
   margin-bottom: 9px;
 }
@@ -177,6 +179,59 @@ body {
 
 .item-li-footer {
   display: block;
+}
+
+.title-footer {
+  display: flex;
+  color: #ffffff;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.social-link-footer {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.icon-place-footer {
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+}
+.icon-link-footer {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+.icon-link-footer:hover,
+.icon-place-footer:hover {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
+.social-link-place {
+  padding-left: 156px;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.container-adress {
+  display: flex;
+  align-items: baseline;
 }
 /* страница студия */
 
@@ -244,6 +299,12 @@ body {
 .team {
   background-color: #f5f4fa;
 }
+.item-team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+}
 
 .section-head {
   color: var(--primary-text-color);
@@ -274,6 +335,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--p-text-color);
   text-align: center;
+  padding-top: 10px;
 }
 .team-info {
   padding-top: 30px;
@@ -281,14 +343,22 @@ body {
 }
 
 .social-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   padding-left: 32px;
   padding-right: 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 16px;
 }
 .icon-place {
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon-link {
   display: flex;
@@ -296,10 +366,43 @@ body {
   height: 20px;
   fill: var(--p-text-color);
 }
-.icon-link:hover {
+.icon-link:hover,
+.icon-place:hover {
   background-color: var(--accent-color);
   fill: #ffffff;
 }
+
+/* секция "постоянные клиенты" */
+.list-company {
+  display: flex;
+  justify-content: center;
+}
+.icon-clients {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.icon {
+  fill: #afb1b8;
+}
+.icon:focus,
+.icon:hover {
+  fill: var(--accent-color);
+}
+
+.icon-clients:hover,
+.icon-clients:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
 /* страница портфолио */
 
 /* работы команды */
