@@ -119,8 +119,8 @@ body {
   padding-top: 4px;
 }
 
-.icon-contact:hover,
-.icon-contact:focus {
+.contacts-header:hover,
+.contacts-header:focus {
   fill: var(--accent-color);
 }
 
@@ -364,11 +364,13 @@ body {
   display: flex;
   width: 20px;
   height: 20px;
-  fill: var(--p-text-color);
+  fill: #afb1b8;
 }
-.icon-link:hover,
+
 .icon-place:hover {
   background-color: var(--accent-color);
+}
+.icon-place:hover .icon-link {
   fill: #ffffff;
 }
 
@@ -392,8 +394,8 @@ body {
 .icon {
   fill: #afb1b8;
 }
-.icon:focus,
-.icon:hover {
+.icon-clients:hover .icon,
+.icon-clients:focus .icon {
   fill: var(--accent-color);
 }
 
@@ -441,7 +443,11 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
+.img-decor-portfolio:focus,
+.img-decor-portfolio:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /* кнопки */
 
 .button-primary {
